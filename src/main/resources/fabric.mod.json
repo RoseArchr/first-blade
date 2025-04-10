@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "first-blade",
+	"version": "${version}",
+	"name": "First Blade",
+	"description": "First attempt at a sword mod.",
+	"authors": [
+		"Rose!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/first-blade/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"firstblade.modid.FirstBlade"
+		],
+		"fabric-datagen": [
+			"firstblade.modid.FirstBladeDataGenerator"
+		],
+		"client": [
+			"firstblade.modid.FirstBladeClient"
+		]
+	},
+	"mixins": [
+		"first-blade.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
